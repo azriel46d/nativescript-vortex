@@ -1,0 +1,7 @@
+{
+    "name": "nativescript-vortex",
+    "description": "Vortex for NS",
+    "authors": "michaeld",
+    "version": "1.0.0",
+    "main": "vortex.js"
+}

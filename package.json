@@ -4,7 +4,9 @@
   "license": "MIT",
   "scripts": {},
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "@nativescript-community/ui-webview": "^1.4.3"
+  },
   "devDependencies": {
     "@nrwl/nx-cloud": "latest",
     "nx": "15.6.2",

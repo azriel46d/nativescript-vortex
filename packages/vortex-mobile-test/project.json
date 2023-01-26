@@ -1,0 +1,23 @@
+{
+  "root": "packages/vortex-mobile-test",
+  "sourceRoot": "packages/cli/src",
+  "projectType": "application",
+  "targets": {
+    "copy-web": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "rm -rf packages/vortex-mobile-test/app/assets/web-app && cp -rf packages/vortex-web-test/dist/ packages/vortex-mobile-test/app/assets/web-app"
+      }
+    },
+    "builder": {
+      "executor": "nx:run-script",
+      "dependsOn": [
+        { "projects": "dependencies", "target": "build" },
+        { "projects": "self", "target": "copy-web" }
+      ],
+      "options": {
+        "script": "run:android"
+      }
+    }
+  }
+}

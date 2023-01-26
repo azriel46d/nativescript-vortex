@@ -1,0 +1,26 @@
+{
+  "name": "vortex-mobile-test",
+  "main": "app/app.js",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "run:android": "ns run android"
+  },
+  "dependencies": {
+    "@nativescript-community/ui-material-bottomsheet": "^7.0.36",
+    "@nativescript-community/ui-webview": "^1.4.3",
+    "@nativescript/core": "~8.4.0",
+    "@nativescript/theme": "~3.0.2",
+    "nativescript-vue": "~2.9.2"
+  },
+  "devDependencies": {
+    "@nativescript/android": "8.3.1",
+    "@nativescript/webpack": "~5.0.12",
+    "nativescript-vue-template-compiler": "~2.9.2"
+  },
+  "nx": {
+    "implicitDependencies": [
+      "vortex-web-test"
+    ]
+  }
+}
